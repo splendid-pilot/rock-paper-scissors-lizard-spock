@@ -1,0 +1,122 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  text-align: center;
+  color: #cc33ff;
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+h1 {
+  color: #4455ff;
+}
+
+.rules {
+  margin: 20px auto;
+  width: 50%;
+  background-color: #33cc99;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+.rules ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rules li {
+  text-align: left;
+  margin: 5px 0;
+}
+
+.choices {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button {
+  font-size: 24px;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background-color: black;
+  color: #cc33ff;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+.table-container {
+  max-height: 40vh;
+  overflow-y: auto;
+  width: 100%;
+  max-width: 300px;
+}
+
+table {
+  margin: 5px auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  font-size: clamp(0.8rem, 3vw, 1rem);
+}
+
+.result-message {
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  margin-top: 5px;
+  color: #ff5555;
+}
+.highlight {
+  font-weight: bold;
+  background-color: yellow;
+  padding: 2px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.fa-github {
+  font-size: 24px;
+  color: aliceblue;
+  transition: transform 0.3s step-end;
+}
+
+.fa-github:hover {
+  transform: rotate(360deg) scale(1.2);
+}

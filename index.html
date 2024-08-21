@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rock-Paper-Scissors-Lizard-Spock</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4c536a6bd5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Rock-Paper-Scissors-Lizard-Spock</h1>
+      <h2>Rules</h2>
+      <div class="rules">
+        <ul>
+          <li>Scissors cuts Paper</li>
+          <li>Paper covers Rock</li>
+          <li>Rock crushes Lizard</li>
+          <li>Lizard poisons Spock</li>
+          <li>Spock smashes Scissors</li>
+          <li>Scissors decapitates Lizard</li>
+          <li>Lizard eats Paper</li>
+          <li>Paper disproves Spock</li>
+          <li>Spock vaporizes Rock</li>
+          <li>(and as it always has) Rock crushes Scissors</li>
+        </ul>
+      </div>
+      <div class="result">
+        <div class="table-container">
+          <table>
+            <tr class="user">
+              <th>User</th>
+            </tr>
+            <tr class="computer">
+              <th>Computer</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="choices">
+        <button class="rock">🪨</button>
+        <button class="paper">✋</button>
+        <button class="scissors">✂️</button>
+        <button class="lizard">🦎</button>
+        <button class="spock">🖖</button>
+      </div>
+    </div>
+    <p class="result-message"></p>
+    <button class="play-again">Play Again</button>
+    <footer class="footer">
+      <p>
+        Copyright ©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        splendid-pilot
+      </p>
+      <a href="https://github.com/splendid-pilot" target="_blank">
+        <i class="fab fa-github"></i
+      ></a>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
